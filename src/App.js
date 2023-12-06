@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import { SecondaryButton } from './components/atoms/button/SecondaryButton';
+import { PrimaryButton } from './components/atoms/button/PrimaryButton';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PrimaryButton>テスト</PrimaryButton>
+      <SecondaryButton>検索</SecondaryButton>
     </div>
   );
 }
